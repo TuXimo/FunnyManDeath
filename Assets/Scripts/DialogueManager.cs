@@ -27,8 +27,6 @@ public class DialogueManager : MonoBehaviour
         {
             objectButton.button.interactable = false;
         }
-
-        current.enabled = false;
     }
 
     public void EnableAllButtons()

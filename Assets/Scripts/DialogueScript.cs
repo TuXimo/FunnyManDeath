@@ -37,9 +37,11 @@ public class DialogueScript : MonoBehaviour
         else
         {
             dialogueManager.EnableAllButtons();
-            Destroy(gameObject);
+            gameObject.SetActive(false);
             dialogueManager._cameraManager.isReadingAText = false;
             dialogueManager.placeHolder.gameObject.SetActive(false);
+
+            _textIndex = 0;
         }
     }
 
