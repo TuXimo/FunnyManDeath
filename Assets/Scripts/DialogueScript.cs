@@ -1,4 +1,5 @@
-﻿using Scriptable_Objects;
+﻿using System.Collections;
+using Scriptable_Objects;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
@@ -45,7 +46,26 @@ public class DialogueScript : MonoBehaviour
     {
         if(dialogues.dialogue.Length != 0)
         {
-            _tmpText.text = dialogues.dialogue[dialogueIndex];
+            StartCoroutine(ShowTextCoroutine(dialogues.dialogue[dialogueIndex]));
         }
+    }
+    
+    
+
+    private readonly float timeForNextLetter = 0.05f;
+    private IEnumerator ShowTextCoroutine(string fullText)
+    {
+        _nextButton.interactable = false;
+        
+        string currentText = " ";
+        
+        for (int i = 0; i < fullText.Length+1; i++)
+        {
+            currentText = fullText.Substring(0, i);
+            _tmpText.text = currentText;
+            yield return new WaitForSeconds(timeForNextLetter); 
+        }
+
+        _nextButton.interactable = true;
     }
 }
