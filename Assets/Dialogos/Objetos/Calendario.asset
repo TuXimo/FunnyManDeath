@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d3db5b4f052661148b94ac9a8b5462d0, type: 3}
+  m_Name: Calendario
+  m_EditorClassIdentifier: 
+  dialogue:
+  - "Hay una fecha marcada, 28 de enero. Esa es la fecha de su cumplea\xF1os, pero
+    tambi\xE9n es la fecha en la que su madre muri\xF3. "
+  - "La pobre muri\xF3 al dar a luz."
