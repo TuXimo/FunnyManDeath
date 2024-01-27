@@ -1,13 +1,12 @@
-﻿using System;
-using Scriptable_Objects;
+﻿using Scriptable_Objects;
 using TMPro;
 using UnityEngine;
-using UnityEngine.Serialization;
 using UnityEngine.UI;
 
 public class DialogueScript : MonoBehaviour
 {
     [SerializeField] private DialogueAsset dialogues;
+    [SerializeField] private DialogueManager dialogueManager;
     [SerializeField] private TMP_Text _tmpText;
     [SerializeField] private Button _nextButton;
 
@@ -16,6 +15,7 @@ public class DialogueScript : MonoBehaviour
     private void OnEnable()
     {
         SetText(0);
+        dialogueManager.placeHolder.SetActive(true);
     }
     
     private void Start()
@@ -35,13 +35,15 @@ public class DialogueScript : MonoBehaviour
         
         else
         {
+            dialogueManager.EnableAllButtons();
             Destroy(gameObject);
+            dialogueManager.placeHolder.SetActive(false);
         }
     }
 
     private void SetText(int dialogueIndex)
     {
-        if(dialogues.dialogue != null)
+        if(dialogues != null)
         {
             _tmpText.text = dialogues.dialogue[dialogueIndex];
         }
