@@ -1,14 +1,12 @@
-using System;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.Serialization;
 using UnityEngine.UI;
 
 public class DialogueManager : MonoBehaviour
 {
     [SerializeField] private ObjectButton[] _objectButtons;
-    public GameObject placeHolder;
+    public CameraManager _cameraManager;
+    
+    public Image placeHolder;
 
     private void Start()
     {
@@ -18,6 +16,7 @@ public class DialogueManager : MonoBehaviour
             {
                 DisableAllButtonsExceptThis(objectButton.button);
                 objectButton.objectReference.SetActive(true);
+                _cameraManager.isReadingAText = true;
             });
         }
     }

@@ -16,7 +16,7 @@ public class DialogueScript : MonoBehaviour
     private void OnEnable()
     {
         SetText(0);
-        dialogueManager.placeHolder.SetActive(true);
+        dialogueManager.placeHolder.gameObject.SetActive(true);
     }
     
     private void Start()
@@ -38,7 +38,8 @@ public class DialogueScript : MonoBehaviour
         {
             dialogueManager.EnableAllButtons();
             Destroy(gameObject);
-            dialogueManager.placeHolder.SetActive(false);
+            dialogueManager._cameraManager.isReadingAText = false;
+            dialogueManager.placeHolder.gameObject.SetActive(false);
         }
     }
 
@@ -50,8 +51,6 @@ public class DialogueScript : MonoBehaviour
         }
     }
     
-    
-
     private readonly float timeForNextLetter = 0.05f;
     private IEnumerator ShowTextCoroutine(string fullText)
     {
