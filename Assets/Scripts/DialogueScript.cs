@@ -43,7 +43,7 @@ public class DialogueScript : MonoBehaviour
 
     private void SetText(int dialogueIndex)
     {
-        if(dialogues != null)
+        if(dialogues.dialogue.Length != 0)
         {
             _tmpText.text = dialogues.dialogue[dialogueIndex];
         }

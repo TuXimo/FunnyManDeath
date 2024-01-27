@@ -1,28 +1,42 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Serialization;
 using UnityEngine.UI;
 
 public class DialogueManager : MonoBehaviour
 {
-    [SerializeField] private Button[] _buttons;
+    [SerializeField] private ObjectButton[] _objectButtons;
     public GameObject placeHolder;
-    
+
+    private void Start()
+    {
+        foreach (var objectButton in _objectButtons)
+        {
+            objectButton.button.onClick.AddListener(() =>
+            {
+                DisableAllButtonsExceptThis(objectButton.button);
+                objectButton.objectReference.SetActive(true);
+            });
+        }
+    }
+
     public void DisableAllButtonsExceptThis(Button current)
     {
-        foreach (var button in _buttons)
+        foreach (var objectButton in _objectButtons)
         {
-            button.interactable = false;
+            objectButton.button.interactable = false;
         }
 
-        current.interactable = true;
+        current.enabled = false;
     }
 
     public void EnableAllButtons()
     {
-        foreach (var button in _buttons)
+        foreach (var objectButton in _objectButtons)
         {
-            button.interactable = true;
+            objectButton.button.interactable = true;
         }
     }
 }
