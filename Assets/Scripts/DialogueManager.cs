@@ -6,7 +6,7 @@ public class DialogueManager : MonoBehaviour
     [SerializeField] private ObjectButton[] _objectButtons;
     public CameraManager _cameraManager;
     
-    public Image placeHolder;
+    public Animator notepadAnimator;
 
     private void Start()
     {

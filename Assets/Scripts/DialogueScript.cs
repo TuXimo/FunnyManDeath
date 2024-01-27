@@ -13,10 +13,14 @@ public class DialogueScript : MonoBehaviour
 
     private int _textIndex;
     
+    private readonly float timeForNextLetter = 0.05f;
+    private static readonly int SetUp = Animator.StringToHash("setUp");
+    private static readonly int SetDown = Animator.StringToHash("setDown");
+    
     private void OnEnable()
     {
         SetText(0);
-        dialogueManager.placeHolder.gameObject.SetActive(true);
+        dialogueManager.notepadAnimator.SetTrigger(SetUp);
     }
     
     private void Start()
@@ -39,8 +43,8 @@ public class DialogueScript : MonoBehaviour
             dialogueManager.EnableAllButtons();
             gameObject.SetActive(false);
             dialogueManager._cameraManager.isReadingAText = false;
-            dialogueManager.placeHolder.gameObject.SetActive(false);
-
+            dialogueManager.notepadAnimator.SetTrigger(SetDown);
+            _nextButton.gameObject.SetActive(false);
             _textIndex = 0;
         }
     }
@@ -52,10 +56,12 @@ public class DialogueScript : MonoBehaviour
             StartCoroutine(ShowTextCoroutine(dialogues.dialogue[dialogueIndex]));
         }
     }
-    
-    private readonly float timeForNextLetter = 0.05f;
+
     private IEnumerator ShowTextCoroutine(string fullText)
     {
+        _tmpText.text = "";
+        yield return new WaitForSeconds(0.8f);
+        _nextButton.gameObject.SetActive(true);
         _nextButton.interactable = false;
         
         string currentText = " ";
