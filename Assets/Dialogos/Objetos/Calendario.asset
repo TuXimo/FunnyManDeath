@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: Calendario
   m_EditorClassIdentifier: 
   dialogue:
-  - "Hay una fecha marcada, 28 de enero. Esa es la fecha de su cumplea\xF1os, pero
-    tambi\xE9n es la fecha en la que su madre muri\xF3. "
+  - "Hay una fecha marcada, 28 de enero de 1 9 8 6 . Esa es la fecha de su cumplea\xF1os,
+    pero tambi\xE9n es la fecha en la que su madre muri\xF3. "
   - "La pobre muri\xF3 al dar a luz."

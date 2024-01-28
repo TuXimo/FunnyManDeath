@@ -13,7 +13,8 @@ MonoBehaviour:
   m_Name: UnlockedChest
   m_EditorClassIdentifier: 
   dialogue:
-  - "Autografo de Pi\xF1\xF3n Fijo."
+  - "Autografo de Pi\xF1\xF3n Fijo. Parece que se enoj\xF3 con \xE9l. Me pregunto
+    si tengo que revisar algo de nuevo."
   - Una foto de Krusty el payaso.
   - Y un DVD del Joker.
   - "Nada de aqu\xED me sirve..."

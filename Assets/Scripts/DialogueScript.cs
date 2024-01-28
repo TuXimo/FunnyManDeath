@@ -41,6 +41,8 @@ public class DialogueScript : MonoBehaviour
     [SerializeField] private bool isKrusty;
     [SerializeField] private GameObject[] krusties;
 
+    [SerializeField] private bool isFinal;
+    [SerializeField] private GameObject finalScene;
     
     
     public void NextText()
@@ -65,16 +67,24 @@ public class DialogueScript : MonoBehaviour
         
         else
         {
-            dialogueManager.EnableAllButtons();
-            gameObject.SetActive(false);
-            dialogueManager._cameraManager.isReadingAText = false;
-            dialogueManager.notepadAnimator.SetTrigger(SetDown);
-            _nextButton.gameObject.SetActive(false);
-            _textIndex = 0;
-
-            if (closeUp != null)
+            if (isFinal)
             {
-                closeUp.SetActive(false);
+                finalScene.SetActive(true);
+            }
+            
+            else
+            {
+                dialogueManager.EnableAllButtons();
+                gameObject.SetActive(false);
+                dialogueManager._cameraManager.isReadingAText = false;
+                dialogueManager.notepadAnimator.SetTrigger(SetDown);
+                _nextButton.gameObject.SetActive(false);
+                _textIndex = 0;
+
+                if (closeUp != null)
+                {
+                    closeUp.SetActive(false);
+                }
             }
         }
     }
