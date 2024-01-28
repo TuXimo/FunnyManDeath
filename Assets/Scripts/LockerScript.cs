@@ -59,6 +59,7 @@ public class LockerScript : MonoBehaviour
             lockpad.SetActive(false);
             openedChest.SetActive(true);
             backGroundChest.SetActive(true);
+            openChest.Play();
         }
 
         gameObject.SetActive(false);       
@@ -69,5 +70,7 @@ public class LockerScript : MonoBehaviour
     [SerializeField] private GameObject lockpad;
     [SerializeField] private GameObject openedChest;
     [SerializeField] private GameObject backGroundChest;
+    
+    [SerializeField] private AudioSource openChest;
     
 }

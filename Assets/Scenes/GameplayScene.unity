@@ -354,7 +354,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: -12, y: -165}
-  m_SizeDelta: {x: 102.6392, y: 95.1627}
+  m_SizeDelta: {x: 156.7734, y: 117.4533}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &96837135
 MonoBehaviour:
@@ -486,7 +486,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 9, y: -180}
-  m_SizeDelta: {x: 102.6392, y: 95.1627}
+  m_SizeDelta: {x: 154.22, y: 111.0846}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &108088787
 MonoBehaviour:
@@ -871,6 +871,7 @@ MonoBehaviour:
   lockpad: {fileID: 906914456}
   openedChest: {fileID: 686431750}
   backGroundChest: {fileID: 896896710}
+  openChest: {fileID: 1644568700}
 --- !u!1 &203844586
 GameObject:
   m_ObjectHideFlags: 0
@@ -1631,7 +1632,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 7.388, y: 165.00002}
-  m_SizeDelta: {x: 106.7195, y: 75.9432}
+  m_SizeDelta: {x: 157.4463, y: 102.1812}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &293873759
 MonoBehaviour:
@@ -5111,8 +5112,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -7.3880973, y: 165.00002}
-  m_SizeDelta: {x: 106.7195, y: 75.9432}
+  m_AnchoredPosition: {x: -13.6524, y: 171.8338}
+  m_SizeDelta: {x: 137.4713, y: 107.8341}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &975055923
 MonoBehaviour:
@@ -5319,7 +5320,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: -8, y: -161}
-  m_SizeDelta: {x: 102.6392, y: 95.1627}
+  m_SizeDelta: {x: 153.589, y: 107.9002}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1006376334
 MonoBehaviour:
@@ -5632,9 +5633,9 @@ RectTransform:
   m_Children:
   - {fileID: 1365019532}
   - {fileID: 1942030130}
-  - {fileID: 1436502907161632685}
   - {fileID: 168324832}
   - {fileID: 1366084742}
+  - {fileID: 1436502907161632685}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -6489,7 +6490,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 1, y: 165}
-  m_SizeDelta: {x: 106.7195, y: 75.9432}
+  m_SizeDelta: {x: 151.3667, y: 89.8955}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1157446084
 MonoBehaviour:
@@ -8241,7 +8242,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: -2, y: 165.00002}
-  m_SizeDelta: {x: 106.7195, y: 75.9432}
+  m_SizeDelta: {x: 165.9454, y: 101.0002}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1385742167
 MonoBehaviour:
@@ -8448,7 +8449,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 2, y: -161}
-  m_SizeDelta: {x: 102.6392, y: 95.1627}
+  m_SizeDelta: {x: 179.064, y: 127.0064}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1392601796
 MonoBehaviour:
@@ -10032,11 +10033,11 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 24300002, guid: 30d1a5acea58f704e8aceb004109cf27,
     type: 2}
-  m_audioClip: {fileID: 0}
-  m_PlayOnAwake: 1
+  m_audioClip: {fileID: 8300000, guid: 49e4253604cdb254ebbe272a7360e8a4, type: 3}
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
-  Loop: 1
+  Loop: 0
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
@@ -11672,7 +11673,7 @@ AudioSource:
     type: 2}
   m_audioClip: {fileID: 8300000, guid: 736e0324d8e9aad4991dc92a8fc4a1a1, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.772
   m_Pitch: 1
   Loop: 1
   Mute: 0
