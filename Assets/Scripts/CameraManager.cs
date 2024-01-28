@@ -12,6 +12,11 @@ public class CameraManager : MonoBehaviour
 
     public bool isReadingAText;
 
+    public void SetIsReading(bool isReading)
+    {
+        isReadingAText = isReading;
+    }
+
     private void Update()
     {
         if (Input.mousePosition.x > 800 && Input.mousePosition.x < 1120 || isReadingAText) return;

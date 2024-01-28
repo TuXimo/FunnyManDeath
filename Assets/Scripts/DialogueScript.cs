@@ -46,6 +46,7 @@ public class DialogueScript : MonoBehaviour
     public void NextText()
     {
         _textIndex++;
+        _nextButton.interactable = false;
 
         if (isKrusty)
         {
