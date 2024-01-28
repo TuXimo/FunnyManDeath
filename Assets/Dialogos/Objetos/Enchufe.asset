@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: Enchufe
   m_EditorClassIdentifier: 
   dialogue:
-  - A ver si ahora funciona.
+  - "Un enchufe. \xBFMe pregunto para qu\xE9 servir\xE1?"

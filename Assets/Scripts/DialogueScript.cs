@@ -100,7 +100,7 @@ public class DialogueScript : MonoBehaviour
     private IEnumerator ShowTextCoroutine(string fullText)
     {
         _tmpText.text = "";
-        yield return new WaitForSeconds(0.8f);
+        yield return new WaitForSeconds(1.5f);
         _nextButton.gameObject.SetActive(true);
         _nextButton.interactable = false;
         

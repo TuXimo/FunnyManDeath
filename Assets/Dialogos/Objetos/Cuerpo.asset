@@ -13,4 +13,5 @@ MonoBehaviour:
   m_Name: Cuerpo
   m_EditorClassIdentifier: 
   dialogue:
-  - "\xBFCu\xE1l fue el motivo?\n\xBFC\xF3mo puede ser que qued\xF3 en esa pose?"
+  - "\xBFCu\xE1l fue el motivo?\n"
+  - "\xBFC\xF3mo puede ser que qued\xF3 en esa pose?"

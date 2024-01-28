@@ -9,7 +9,7 @@ using UnityEngine.UI;
 public class LockerScript : MonoBehaviour
 {
     [SerializeField] TMP_Text[] numberTexts = new TMP_Text[4];
-    [SerializeField] string codePassword = "1986";
+    [SerializeField] string codePassword = "2802";
 
 
     public void SumNumber(int slot)
