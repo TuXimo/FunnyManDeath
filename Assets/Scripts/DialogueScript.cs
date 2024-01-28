@@ -25,6 +25,10 @@ public class DialogueScript : MonoBehaviour
     
     private void Start()
     {
+        if (isKrusty)
+        {
+            krusties[0].SetActive(true); 
+        }
         _nextButton.onClick.AddListener(NextText);
     }
 
@@ -33,10 +37,26 @@ public class DialogueScript : MonoBehaviour
 
     
 
+    [Space(2)] 
+    [SerializeField] private bool isKrusty;
+    [SerializeField] private GameObject[] krusties;
+
+    
+    
     public void NextText()
     {
         _textIndex++;
-           
+
+        if (isKrusty)
+        {
+            if (krusties.Length > _textIndex)
+            {
+                krusties[_textIndex].SetActive(true);    
+                krusties[_textIndex - 1].SetActive(false);   
+            }
+        }
+        
+        
         if (_textIndex < dialogues.dialogue.Length)
         {   
             SetText(_textIndex);

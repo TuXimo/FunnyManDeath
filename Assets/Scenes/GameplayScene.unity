@@ -761,9 +761,9 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 858600473}
-  - {fileID: 1764589378}
   - {fileID: 535532707}
+  - {fileID: 1764589378}
+  - {fileID: 858600473}
   m_Father: {fileID: 1366084742}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
@@ -1358,6 +1358,8 @@ MonoBehaviour:
   _tmpText: {fileID: 837857826}
   _nextButton: {fileID: 1546429623}
   closeUp: {fileID: 0}
+  isKrusty: 0
+  krusties: []
 --- !u!1 &278926526
 GameObject:
   m_ObjectHideFlags: 0
@@ -1587,6 +1589,8 @@ MonoBehaviour:
   _tmpText: {fileID: 1491850715}
   _nextButton: {fileID: 1136616572}
   closeUp: {fileID: 0}
+  isKrusty: 0
+  krusties: []
 --- !u!1 &293873757
 GameObject:
   m_ObjectHideFlags: 0
@@ -2418,6 +2422,8 @@ MonoBehaviour:
   _tmpText: {fileID: 1732260303}
   _nextButton: {fileID: 1485241053}
   closeUp: {fileID: 0}
+  isKrusty: 0
+  krusties: []
 --- !u!1 &535532706
 GameObject:
   m_ObjectHideFlags: 0
@@ -2883,6 +2889,18 @@ MonoBehaviour:
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 686431753}
+        m_TargetAssemblyTypeName: UnityEngine.Behaviour, UnityEngine
+        m_MethodName: set_enabled
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &686431754
 MonoBehaviour:
@@ -4379,6 +4397,8 @@ MonoBehaviour:
   _tmpText: {fileID: 2131355751}
   _nextButton: {fileID: 1042417145}
   closeUp: {fileID: 1150752730}
+  isKrusty: 0
+  krusties: []
 --- !u!1 &961739749
 GameObject:
   m_ObjectHideFlags: 0
@@ -5400,6 +5420,8 @@ MonoBehaviour:
   _tmpText: {fileID: 1311124286}
   _nextButton: {fileID: 1599338450}
   closeUp: {fileID: 1764589377}
+  isKrusty: 0
+  krusties: []
 --- !u!224 &1087503493
 RectTransform:
   m_ObjectHideFlags: 0
@@ -5667,6 +5689,8 @@ MonoBehaviour:
   _tmpText: {fileID: 1562875951}
   _nextButton: {fileID: 1843206446}
   closeUp: {fileID: 0}
+  isKrusty: 0
+  krusties: []
 --- !u!1 &1150752730
 GameObject:
   m_ObjectHideFlags: 0
@@ -5838,6 +5862,11 @@ MonoBehaviour:
   _tmpText: {fileID: 1602391318}
   _nextButton: {fileID: 1438536638}
   closeUp: {fileID: 147480760}
+  isKrusty: 1
+  krusties:
+  - {fileID: 535532706}
+  - {fileID: 1764589377}
+  - {fileID: 858600472}
 --- !u!1 &1157446082
 GameObject:
   m_ObjectHideFlags: 0
@@ -10144,17 +10173,17 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1739725249}
-  m_LocalRotation: {x: -0, y: -0, z: -0.50000095, w: 0.8660249}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: -1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 168324832}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -60}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: -798, y: -386}
-  m_SizeDelta: {x: 443.2361, y: 515.8678}
+  m_SizeDelta: {x: 298.5327, y: 221.6075}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1739725251
 MonoBehaviour:
@@ -10245,7 +10274,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 6cfa1be69fbd62b4f8ca9fb03db326f9, type: 3}
+  m_Sprite: {fileID: 21300000, guid: f26d78d29f73d2b43aa3de84ee784f2c, type: 3}
   m_Type: 0
   m_PreserveAspect: 1
   m_FillCenter: 1
@@ -10358,6 +10387,8 @@ MonoBehaviour:
   _tmpText: {fileID: 574222604}
   _nextButton: {fileID: 841745433}
   closeUp: {fileID: 0}
+  isKrusty: 0
+  krusties: []
 --- !u!1 &1764589377
 GameObject:
   m_ObjectHideFlags: 0
@@ -10529,6 +10560,8 @@ MonoBehaviour:
   _tmpText: {fileID: 248449696}
   _nextButton: {fileID: 1866997148}
   closeUp: {fileID: 135827715}
+  isKrusty: 0
+  krusties: []
 --- !u!1 &1789962407
 GameObject:
   m_ObjectHideFlags: 0
@@ -10603,6 +10636,8 @@ MonoBehaviour:
   _tmpText: {fileID: 526683594}
   _nextButton: {fileID: 63369031}
   closeUp: {fileID: 0}
+  isKrusty: 0
+  krusties: []
 --- !u!224 &1789962411
 RectTransform:
   m_ObjectHideFlags: 0
@@ -10698,6 +10733,8 @@ MonoBehaviour:
   _tmpText: {fileID: 1063019960}
   _nextButton: {fileID: 571257915}
   closeUp: {fileID: 0}
+  isKrusty: 0
+  krusties: []
 --- !u!224 &1791304000
 RectTransform:
   m_ObjectHideFlags: 0
@@ -11853,6 +11890,8 @@ MonoBehaviour:
   _tmpText: {fileID: 278926528}
   _nextButton: {fileID: 1526845845}
   closeUp: {fileID: 0}
+  isKrusty: 0
+  krusties: []
 --- !u!1 &2107310023
 GameObject:
   m_ObjectHideFlags: 0
