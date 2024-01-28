@@ -28,6 +28,10 @@ public class DialogueScript : MonoBehaviour
         _nextButton.onClick.AddListener(NextText);
     }
 
+    [Space(2)] [SerializeField]
+    private GameObject closeUp;
+
+    
 
     public void NextText()
     {
@@ -46,6 +50,11 @@ public class DialogueScript : MonoBehaviour
             dialogueManager.notepadAnimator.SetTrigger(SetDown);
             _nextButton.gameObject.SetActive(false);
             _textIndex = 0;
+
+            if (closeUp != null)
+            {
+                closeUp.SetActive(false);
+            }
         }
     }
 

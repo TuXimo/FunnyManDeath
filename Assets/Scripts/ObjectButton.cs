@@ -15,13 +15,11 @@ public class ObjectButton : MonoBehaviour, IPointerEnterHandler, IPointerExitHan
 
     public void OnPointerEnter(PointerEventData eventData)
     {
-        Debug.Log("Mouse is over GameObject.");
-        //Cursor.SetCursor(hoverMouse,Vector2.zero, cursorMode);
+        Cursor.SetCursor(hoverMouse,Vector2.zero, CursorMode.Auto);
     }
     
     public void OnPointerExit(PointerEventData eventData)
     {
-        Debug.Log("Mouse is over GameObject.");
-        //Cursor.SetCursor(normalMouse,Vector2.zero, cursorMode);
+        Cursor.SetCursor(normalMouse,Vector2.zero, CursorMode.Auto);
     }
 }

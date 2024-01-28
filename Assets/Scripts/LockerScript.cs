@@ -58,13 +58,24 @@ public class LockerScript : MonoBehaviour
             closedChests.SetActive(false);
             lockpad.SetActive(false);
             openedChest.SetActive(true);
+            backGroundChest.SetActive(true);
+            
+            piñonFijo.SetActive(true);
+            calendario.SetActive(false);
+            
         }
 
         gameObject.SetActive(false);       
     }
 
+    [Space]
     [SerializeField] private GameObject closedChests;
     [SerializeField] private GameObject lockpad;
     [SerializeField] private GameObject openedChest;
+    
+    [Space]
+    [SerializeField] private GameObject backGroundChest;
+    [SerializeField] private GameObject piñonFijo;
+    [SerializeField] private GameObject calendario;
     
 }
