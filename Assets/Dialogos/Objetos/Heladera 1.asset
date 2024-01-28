@@ -10,10 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d3db5b4f052661148b94ac9a8b5462d0, type: 3}
-  m_Name: Correo
+  m_Name: Heladera 1
   m_EditorClassIdentifier: 
   dialogue:
-  - Vaya, hay muchas cartas, y al parecer todas de la misma persona.
-  - "Parece que este individuo est\xE1 obsesionado con Pagliasy."
-  - "Seg\xFAn el expediente esta persona lo habr\xEDa amenazado. Adem\xE1s algunas
-    cartas est\xE1n cubiertas de un liquido blanco y viscozo."
+  - ...
